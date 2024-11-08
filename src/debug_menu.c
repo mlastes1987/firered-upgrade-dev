@@ -54,22 +54,23 @@ void DebugMenu_ProcessGiveItem(void)
 			AddBagItem(ITEM_MEGA_RING, 1);
 			break;
 		case 1: //General Useful Items
-			AddBagItem(ITEM_MAX_REPEL, 100);
-			AddBagItem(ITEM_ESCAPE_ROPE, 100);
-			AddBagItem(ITEM_HEART_SCALE, 100);
+			AddBagItem(ITEM_MAX_REPEL, 999);
+			AddBagItem(ITEM_ESCAPE_ROPE, 999);
+			AddBagItem(ITEM_HEART_SCALE, 999);
+			AddBagItem(ITEM_RARE_CANDY, 999);
 			#if (defined ITEM_HM01_CUT && defined ITEM_HM08_ROCK_CLIMB)
 			for (i = ITEM_HM01_CUT; i <= ITEM_HM08_ROCK_CLIMB; ++i)
 				AddBagItem(i, 1);
 			#endif
 
-			AddBagItem(ITEM_RED_SHARD, 100);
-			AddBagItem(ITEM_BLUE_SHARD, 100);
-			AddBagItem(ITEM_YELLOW_SHARD, 100);
-			AddBagItem(ITEM_GREEN_SHARD, 100);
+			AddBagItem(ITEM_RED_SHARD, 999);
+			AddBagItem(ITEM_BLUE_SHARD, 999);
+			AddBagItem(ITEM_YELLOW_SHARD, 999);
+			AddBagItem(ITEM_GREEN_SHARD, 999);
 			break;
 		case 2: //Poke Balls
 			for (i = ITEM_MASTER_BALL; i <= ITEM_PREMIER_BALL; ++i)
-				AddBagItem(i, 100);
+				AddBagItem(i, 999);
 
 			AddBagItem(ITEM_PARK_BALL, 100);
 			AddBagItem(ITEM_CHERISH_BALL, 100);
